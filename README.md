@@ -17,9 +17,9 @@ choco install vscode -y
 ## Case 1:  Local file-based
 
 ```PowerShell
-py 11mapper.py
-py 12sorter.py
-py 13reducer.py
+python 11mapper.py
+python 12sorter.py
+python 13reducer.py
 ```
 
 ## Case 2:  Use standard input and output
@@ -31,14 +31,12 @@ cat data | map | sort | reduce
 PowerShell and Bash use the same commands:
 
 ```Bash
-cat part.txt
-cat part.txt | python 21mapper.py
-cat part.txt | python 21mapper.py | sort
 cat part.txt | python 21mapper.py | sort  | python 22reducer.py
 
 ```
 
-Command to use larger data file: cat purchases.txt | python 21mapper.py | sort  | python 22reducer.py
+Command to use larger data file: 
+```cat purchases.txt | python 21mapper.py | sort  | python 22reducer.py```
 
 ## References
 
